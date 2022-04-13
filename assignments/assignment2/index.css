@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav h3{
+    flex: 1;
+}
+
+header nav div{
+    margin: auto;
+}
+
+header nav .nav-link{
+    flex: 1;
+    color: white;
+    padding: 5px; 
+    text-decoration: none;  
+}
+
+main{
+    display: flex;
+    padding: 10px;
+}
+
+main section .container{
+    flex-shrink:2;
+}
+
+main section .container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards{
+    border: 1px solid #003366;
+    border-radius: 5px;
+    margin: 1vh auto;
+    width: 30vh;
+    padding: 10px;
+}
+
+main aside{
+    flex-shrink: 1;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #003366;
+}
+
+aside p{
+    color: white;
+}
