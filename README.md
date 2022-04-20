@@ -6,3 +6,9 @@
    - Template with CSS
 - Day 3
    - JavaScript questions   
+- Day 4
+   - JavaScript exercise
+- Day 5
+   - React assignment
+- Day 6
+   - React          

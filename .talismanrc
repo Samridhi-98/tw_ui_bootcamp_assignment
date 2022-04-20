@@ -1,0 +1,7 @@
+
+fileignoreconfig:
+- filename: react-exercise/package-lock.json
+  checksum: 44f7faf0e0115bc0112b543a7cf8905d3aeb4dcaef90b57372ee7ee2dd18bd95
+- filename: react-exercise/src/components/DynamicElement/DynamicElement.js
+  checksum: 3dcf8bb74b3e5a44b62404cc4f24a767f470435d413a377ea4c4f206f55ddd72
+version: 1  
