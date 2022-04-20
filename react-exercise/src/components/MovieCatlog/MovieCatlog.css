@@ -1,0 +1,23 @@
+.movies{
+    text-align: center;
+}
+
+.movie-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie-image{
+    border-radius: 5px;
+}
+
+.movie-title{
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.movie-description{
+    display: none;
+}

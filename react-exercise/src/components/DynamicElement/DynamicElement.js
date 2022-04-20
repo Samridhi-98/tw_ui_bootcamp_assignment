@@ -8,9 +8,3 @@ function DynamicElement({ props }) {
 }
 
 export default DynamicElement;
-
-// const callback = () => console.log('Timeout executed');
-// undefined
-// const timeoutRef = setTimeout(callback, 5000);
-// undefined
-// clearTimeout(timeoutRef);

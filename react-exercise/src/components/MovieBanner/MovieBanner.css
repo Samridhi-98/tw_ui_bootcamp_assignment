@@ -1,0 +1,41 @@
+.banner{
+    display: flex;
+    margin: auto;
+    padding: 2vh;
+    width: 40vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.banner-image {
+    border-radius: 5px;
+}
+
+.banner-title{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.banner-description{
+    font-style: italic;
+}
+
+.aside-content{
+    margin: 2vh;
+    padding: 2vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+@media screen and (max-width: 900px) {
+    .banner{
+        flex-direction: column;
+    }
+    .aside-content{
+        padding: 1vh;
+        margin: auto;
+        text-align: center;
+    }
+}
