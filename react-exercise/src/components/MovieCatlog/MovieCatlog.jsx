@@ -13,24 +13,13 @@ function MovieCatlog({ props }) {
     const createMovieCards = (movieList) => {
         return movieList.map((movie, index) => (
             <article key={index}>
-                <figure onClick={handleMovieBanner} key={index}>
+                <figure onClick={() => { setMovieBanner(movie) }} key={index}>
                     <img className='movie-image' src={movie.imageUrl} alt={movie.title} />
                     <figcaption className='movie-title'>{movie.title}</figcaption>
                     <p className='movie-description'>{movie.description}</p>
                 </figure>
             </article>
         ))
-    }
-
-    const handleMovieBanner = (event) => {
-        // console.log("image: ", event?.target?.parentNode?.childNodes);
-        const movieData = {
-            title: event?.target?.parentNode?.childNodes[1]?.innerText,
-            description: event?.target?.parentNode?.childNodes[2].innerText,
-            imageUrl: event?.target?.parentNode?.childNodes[0]?.currentSrc
-        }
-        setMovieBanner(movieData);
-        // console.log(movieData);
     }
 
     return (
