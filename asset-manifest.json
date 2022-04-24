@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Samridhi-98/tw_ui_bootcamp_assignment/react-exercise/static/css/main.cf38d62d.css",
+    "main.js": "/Samridhi-98/tw_ui_bootcamp_assignment/react-exercise/static/js/main.c660e774.js",
+    "index.html": "/Samridhi-98/tw_ui_bootcamp_assignment/react-exercise/index.html",
+    "main.cf38d62d.css.map": "/Samridhi-98/tw_ui_bootcamp_assignment/react-exercise/static/css/main.cf38d62d.css.map",
+    "main.c660e774.js.map": "/Samridhi-98/tw_ui_bootcamp_assignment/react-exercise/static/js/main.c660e774.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf38d62d.css",
+    "static/js/main.c660e774.js"
+  ]
+}
