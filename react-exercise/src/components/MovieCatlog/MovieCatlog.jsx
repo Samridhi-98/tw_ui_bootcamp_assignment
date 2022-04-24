@@ -11,11 +11,11 @@ function MovieCatlog() {
     const createMovieCards = () => {
         let movieList = state.searchResults.length > 0 ? state.searchResults : state.movies;
 
-        console.log("before movieList: ", movieList);
+        // console.log("before movieList: ", movieList);
 
         movieList = movieList.slice(state.pageNumber * state.pageSize - state.pageSize, state.pageNumber * state.pageSize);
 
-        console.log("after movieList: ", movieList);
+        // console.log("after movieList: ", movieList);
 
         return movieList.map((movie, index) => (
             <article className='movie-box' key={index}>

@@ -12,7 +12,7 @@ function Pagination() {
             let page = <button className='pagination-button' onClick={() => setPageNumber(i)} key={i}>{i}</button>
             pageNumbers.push(page);
         }
-        console.log("pageNumbers: ", pageNumbers);
+        // console.log("pageNumbers: ", pageNumbers);
         return pageNumbers;
     }
 

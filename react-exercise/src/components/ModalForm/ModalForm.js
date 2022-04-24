@@ -16,7 +16,7 @@ function ModalForm(props) {
 
 
     const handleChange = (event) => {
-        console.log("inside handleChange: ", event.target.value);
+        // console.log("inside handleChange: ", event.target.value);
         setNewMovie({ ...newMovie, [event.target.name]: event.target.value });
     }
 

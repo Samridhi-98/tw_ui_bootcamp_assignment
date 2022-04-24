@@ -38,7 +38,7 @@ function MovieProvider({ children }) {
         dispatch({ type: 'SET_PAGE_SIZE', payload: { pageSize: event.target.value } });
     }
 
-    console.log("inside context: ", state);
+    // console.log("inside context: ", state);
 
     return (
         <MovieContext.Provider value={{ state, addMovie, setMovie, setBanner, setSearchResults, clearSearchResults, sortMovieList, setPageNumber, setPageSize }}>

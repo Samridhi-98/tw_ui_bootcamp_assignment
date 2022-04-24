@@ -22,6 +22,7 @@ function MovieBanner() {
                     <figcaption className='banner-title'>{state.banner.title}</figcaption>
                     <p className='banner-description'>{state.banner.description}</p>
                     <p className='banner-rating'> {getRating()} </p>
+                    <p className='banner-release-date'>In Cinemas from {state.banner.releaseDate}</p>
                 </section>
             </figure>
         </article>
