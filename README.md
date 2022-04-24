@@ -11,4 +11,6 @@
 - Day 5
    - React assignment
 - Day 6
-   - React          
+   - React Movie Assignment      
+- Day 7
+   - React Movie Assignment with reducers and context       
