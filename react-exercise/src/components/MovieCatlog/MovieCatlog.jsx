@@ -1,22 +1,27 @@
-import { useState } from 'react';
+import { useContext } from 'react';
+import { MovieContext } from '../../context/MovieContext';
 import MovieBanner from '../MovieBanner/MovieBanner';
+import Pagination from '../Pagination/Pagination';
 import './MovieCatlog.css';
 
-function MovieCatlog({ props }) {
+function MovieCatlog() {
 
-    const [movieBanner, setMovieBanner] = useState({
-        title: "Spider-Man: No Way Home",
-        description: "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
-        imageUrl: "https://image.tmdb.org/t/p/w200/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
-    });
+    const { state, setBanner } = useContext(MovieContext);
 
-    const createMovieCards = (movieList) => {
+    const createMovieCards = () => {
+        let movieList = state.searchResults.length > 0 ? state.searchResults : state.movies;
+
+        console.log("before movieList: ", movieList);
+
+        movieList = movieList.slice(state.pageNumber * state.pageSize - state.pageSize, state.pageNumber * state.pageSize);
+
+        console.log("after movieList: ", movieList);
+
         return movieList.map((movie, index) => (
-            <article key={index}>
-                <figure onClick={() => { setMovieBanner(movie) }} key={index}>
+            <article className='movie-box' key={index}>
+                <figure onClick={() => setBanner(movie)} key={index}>
                     <img className='movie-image' src={movie.imageUrl} alt={movie.title} />
                     <figcaption className='movie-title'>{movie.title}</figcaption>
-                    <p className='movie-description'>{movie.description}</p>
                 </figure>
             </article>
         ))
@@ -24,12 +29,14 @@ function MovieCatlog({ props }) {
 
     return (
         <section className='movies'>
-            <h1>Movie Catalog</h1>
             <section>
-                <MovieBanner props={movieBanner} />
+                <MovieBanner />
             </section>
             <section className='movie-card'>
-                {createMovieCards(props)}
+                {createMovieCards()}
+            </section>
+            <section>
+                <Pagination />
             </section>
         </section>
     )
