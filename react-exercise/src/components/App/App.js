@@ -11,7 +11,7 @@ function App() {
   const { setMovie, setBanner } = useContext(MovieContext);
   // console.log("inside app movie set: ", setMovie);
 
-  const apiKey = '7b8c8f8b9689aede3b63d1d563236916';
+  const apiKey = process.env.REACT_APP_API_KEY;
   const apiLink = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`
 
   useEffect(() => {
